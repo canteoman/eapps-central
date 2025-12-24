@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../src",
+          "files": [
+            "**/*.csproj"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**",
+          "public/**"
+        ],
+        "src": "src"
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appTitle": "E-DocsHub",
+      "_appFooter": "© 2025 E-Dönüşüm Çözümleri | Tüm Hakları Saklıdır.",
+      "_appLogoPath": "images/ifs_logo.png",
+      "css": [ "css/main.css" ],
+      "_enableSearch": true,
+      "_searchLanguages": [ "en", "tr" ]
+    }
+  }
+}

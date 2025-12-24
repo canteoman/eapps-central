@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: kullanici-adin/repo-adin # BURAYI KENDÝ GITHUB BÝLGÝLERÝNLE DEÐÝÞTÝR
+  branch: main # Çalýþtýðýn branch adý
+
+media_folder: "src/images" # Resimlerin yükleneceði yer
+public_folder: "images" # Sitede görünecek resim yolu
+
+collections:
+  - name: "announcements"
+    label: "Duyurular"
+    folder: "announcements" # Markdown dosyalarýnýn olduðu klasör
+    create: true # Yeni dosya oluþturma izni
+    slug: "{{slug}}"
+    fields:
+      - { label: "Baþlýk", name: "title", widget: "string" }
+      - { label: "Yayýn Tarihi", name: "date", widget: "datetime" }
+      - { label: "Ýçerik", name: "body", widget: "markdown" }
+
+  - name: "docs"
+    label: "Teknik Dokümanlar"
+    folder: "docs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Baþlýk", name: "title", widget: "string" }
+      - { label: "Ýçerik", name: "body", widget: "markdown" }

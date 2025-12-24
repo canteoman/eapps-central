@@ -1,0 +1,11 @@
+﻿/* Navbar logosunu zorla boyutlandır */
+.navbar-brand img {
+    height: 40px !important; /* Yüksekliği 40 piksele sabitle */
+    width: auto !important; /* Genişliği oranlı ayarla */
+    display: block !important;
+}
+
+/* Eğer logo SVG ise bazen farklı bir selector gerekebilir, garantiye alalım */
+.navbar-brand > img {
+    max-height: 40px !important;
+}

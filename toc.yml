@@ -1,0 +1,8 @@
+﻿- name: Anasayfa
+  href: index.md
+- name: Duyurular
+  href: announcements/
+- name: Teknik Bilgi Bankası
+  href: teknik/
+- name: Sürüm Notları
+  href: surum-notlari/
