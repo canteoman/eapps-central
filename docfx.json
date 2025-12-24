@@ -26,14 +26,15 @@
     ],
     "resource": [
       {
-        "files": [
-          "images/**",
-          "public/**"
-        ],
+        "files": [ "images/**" ],
         "src": "src"
       },
       {
         "files": [ "admin/**" ],
+        "src": "src/public"
+      },
+      {
+        "files": [ "main.css" ],
         "src": "src/public"
       }
     ],
