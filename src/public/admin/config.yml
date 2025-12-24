@@ -1,17 +1,19 @@
+# 1. Backend Ayarlarý: Netlify Identity/Git Gateway kullanýyoruz
 backend:
-  name: github
-  repo: kullanici-adin/repo-adin # BURAYI KENDÝ GITHUB BÝLGÝLERÝNLE DEÐÝÞTÝR
-  branch: main # Çalýþtýðýn branch adý
+  name: git-gateway
+  branch: main # Eðer branch adýn master ise burayý master yap
 
-media_folder: "src/images" # Resimlerin yükleneceði yer
-public_folder: "images" # Sitede görünecek resim yolu
+# 2. Medya Ayarlarý: Resimlerin nereye kaydedileceði
+media_folder: "src/images"        # Yeni resimler buraya yüklenecek
+public_folder: "/images"         # Sitede DocFX bu yolu kullanacak
 
+# 3. Koleksiyonlar: Sol menüde görünecek baþlýklar
 collections:
   - name: "announcements"
     label: "Duyurular"
-    folder: "announcements" # Markdown dosyalarýnýn olduðu klasör
-    create: true # Yeni dosya oluþturma izni
-    slug: "{{slug}}"
+    folder: "announcements"      # Ana dizindeki announcements klasörü
+    create: true                 # Yeni duyuru ekleme izni
+    slug: "{{slug}}"             # Dosya adý otomatik oluþsun
     fields:
       - { label: "Baþlýk", name: "title", widget: "string" }
       - { label: "Yayýn Tarihi", name: "date", widget: "datetime" }
@@ -19,7 +21,7 @@ collections:
 
   - name: "docs"
     label: "Teknik Dokümanlar"
-    folder: "docs"
+    folder: "docs"               # Ana dizindeki docs klasörü
     create: true
     slug: "{{slug}}"
     fields:
