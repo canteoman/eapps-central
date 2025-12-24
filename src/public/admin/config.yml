@@ -1,7 +1,9 @@
 ﻿# 1. Backend Ayarları: Netlify Identity/Git Gateway kullanıyoruz
 backend:
-  name: git-gateway
-  branch: main # Eğer branch adın master ise burayı master yap
+  name: github
+  repo: canteoman/eapps-central # Kullanıcı adın ve repo adın
+  branch: main
+  base_url: https://your-oauth-proxy.com
 
 # 2. Medya Ayarları: Resimlerin nereye kaydedileceği
 media_folder: "src/images"        # Yeni resimler buraya yüklenecek
