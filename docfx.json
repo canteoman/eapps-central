@@ -35,7 +35,8 @@
       },
       {
         "files": [ "main.css" ],
-        "src": "src/public"
+        "src": "src/public",
+        "dest": "public"
       }
     ],
     "output": "_site",
