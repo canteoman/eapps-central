@@ -3,7 +3,7 @@ backend:
   name: github
   repo: canteoman/eapps-central # Kullanıcı adın ve repo adın
   branch: main
-  base_url: https://your-oauth-proxy.com
+  base_url: https://static-cms-auth.vercel.app
 
 # 2. Medya Ayarları: Resimlerin nereye kaydedileceği
 media_folder: "src/images"        # Yeni resimler buraya yüklenecek
