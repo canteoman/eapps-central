@@ -31,6 +31,10 @@
           "public/**"
         ],
         "src": "src"
+      },
+      {
+        "files": [ "admin/**" ],
+        "src": "src/public"
       }
     ],
     "output": "_site",
