@@ -1,29 +1,29 @@
-# 1. Backend Ayarları: Netlify Identity/Git Gateway kullanıyoruz
+ï»¿# 1. Backend AyarlarÄ±: Netlify Identity/Git Gateway kullanÄ±yoruz
 backend:
   name: git-gateway
-  branch: main # Eğer branch adın master ise burayı master yap
+  branch: main # EÄŸer branch adÄ±n master ise burayÄ± master yap
 
-# 2. Medya Ayarları: Resimlerin nereye kaydedileceği
-media_folder: "src/images"        # Yeni resimler buraya yüklenecek
+# 2. Medya AyarlarÄ±: Resimlerin nereye kaydedileceÄŸi
+media_folder: "src/images"        # Yeni resimler buraya yÃ¼klenecek
 public_folder: "/images"         # Sitede DocFX bu yolu kullanacak
 
-# 3. Koleksiyonlar: Sol menüde görünecek başlıklar
+# 3. Koleksiyonlar: Sol menÃ¼de gÃ¶rÃ¼necek baÅŸlÄ±klar
 collections:
   - name: "announcements"
     label: "Duyurular"
-    folder: "announcements"      # Ana dizindeki announcements klasörü
+    folder: "announcements"      # Ana dizindeki announcements klasÃ¶rÃ¼
     create: true                 # Yeni duyuru ekleme izni
-    slug: "{{slug}}"             # Dosya adı otomatik oluşsun
+    slug: "{{slug}}"             # Dosya adÄ± otomatik oluÅŸsun
     fields:
-      - { label: "Başlık", name: "title", widget: "string" }
-      - { label: "Yayın Tarihi", name: "date", widget: "datetime" }
-      - { label: "İçerik", name: "body", widget: "markdown" }
+      - { label: "BaÅŸlÄ±k", name: "title", widget: "string" }
+      - { label: "YayÄ±n Tarihi", name: "date", widget: "datetime" }
+      - { label: "Ä°Ã§erik", name: "body", widget: "markdown" }
 
   - name: "docs"
-    label: "Teknik Dokümanlar"
-    folder: "docs"               # Ana dizindeki docs klasörü
+    label: "Teknik DokÃ¼manlar"
+    folder: "docs"               # Ana dizindeki docs klasÃ¶rÃ¼
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Başlık", name: "title", widget: "string" }
-      - { label: "İçerik", name: "body", widget: "markdown" }
+      - { label: "BaÅŸlÄ±k", name: "title", widget: "string" }
+      - { label: "Ä°Ã§erik", name: "body", widget: "markdown" }
